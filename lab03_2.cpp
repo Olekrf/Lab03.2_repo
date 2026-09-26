@@ -16,6 +16,17 @@ int main(){
     cout << "c ="; cin >> c;
     cout << "x ="; cin >> x;
 
+    // 1 спосіб
+    if (x + 10 < 0 && b != 0 )
+       F = a*pow(x, 2) - c*x + b;
+    if (x + 10 > 0 && b == 0)
+       F = (x - a)/(x - c);
+    if (!(x + 10 < 0 && b != 0) && !(x + 10 > 0 && b == 0))
+       F = -x/(a-c);
+    cout << "1) F = " << F << endl;
+
+
+    //2 спосіб
     if (x + 10 < 0 && b != 0 )
        F = a*pow(x, 2) - c*x + b;
     else 
